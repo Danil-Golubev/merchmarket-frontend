@@ -1,0 +1,49 @@
+.container{
+    height: 35vw;
+    width:25%;
+    width: 50%;
+    height: 65vw;
+    background-color: #ecececcc;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    border:0.25px solid #000000cc;
+    overflow: hidden;;
+}
+
+
+.mainBlock{
+    display: flex;
+}
+
+.textBlock{
+font-size: 1.3vw;
+position:absolute; 
+bottom:20px;
+width: 80%;
+
+}
+.price{
+   color:wheat;
+   right: 0;
+ 
+}
+*{
+    margin:0;
+}
+.imageUrl{
+    height: auto;
+    overflow: hidden;;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+@media (min-width:1300px){
+    .container{
+        width: 25%;
+        height: 37vw;
+    }
+
+}
+
+

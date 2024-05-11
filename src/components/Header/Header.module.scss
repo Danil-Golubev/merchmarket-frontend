@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+.Header{
+    font-size: 2fw;
+    overflow: hiiden;
+    width: 100%;
+    height: 14vw;
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.container{
+    height: 80%;
+    width: 80%;
+
+}
+.Cart{
+    position: static;;
+    font-size: 50px;
+    float:right;
+}
+.ul{
+    
+    list-style: none;
+}
+
+.blocktitle{
+    width: 25%;
+    height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+        position: relative;
+        border:0.25px solid #000000cc;
+}
+.block{
+    width: 25%;
+    height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+        position: relative;
+
+}
+.block2{
+    width: 50%;
+    height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+        position: relative;
+
+}
+
+
+
+.halfblockcontent{
+
+    display: flex;
+    align-items: center;
+
+    width: 95%;
+    height: 80%;
+    font-size: 2vw;
+}
+
+.halfblock{
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    border:0.25px solid #000000cc;
+
+}
+.halfblocklist{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    border:0.25px solid #000000cc;
+
+}
+.halfblockdiag{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    border:0.25px solid #000000cc;
+
+}
+
+.diag{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom right, transparent calc(50% - 1px), black calc(50% - 1px), black 50%, transparent 50%),
+                linear-gradient(to bottom left, transparent calc(50% - 1px), black calc(50% - 1px), black 50%, transparent 50%);
+
+}
+
+
+.title{
+    width: 100%;
+    height: 100%;
+    position: static;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 4vw;
+}
+
+.pagetitle{
+   margin-left:0;
+
+}
+.amount{
+    right: 0;
+}
+.pageslist{
+padding-left: 20px;
+gap: 1vw;
+display: flex;
+list-style: none;
+}
+
+
+
+ @media (max-width:1100px){
+    .halfblockdiag{
+        width: 0;
+        height: 0;
+    }
+    .halfblocklist{
+        width: 150%;
+        border-right: 0;
+    }
+    .pageslist{
+        font-size: 4vw;
+    }
+ }
+
+
+ @media (min-width:1540px){
+    .pageslist{
+        font-size: 1.2vw;
+    }
+ }
+ @media (max-width:1540px){
+    .pageslist{
+        font-size: 1.2vw;
+    }
+ }
+ @media (max-width:1100px){
+    .pageslist{
+        font-size: 2vw;
+    }
+ }
+ @media (max-width:450px){
+    .pageslist{
+        font-size: 2.1vw;
+    }
+    .pageslist{
+        padding-left: 5px;
+    }
+
+    .Header{
+        height: 20vw;
+    }
+ }
+ *{
+    text-decoration: none;
+    color: black;
+ }

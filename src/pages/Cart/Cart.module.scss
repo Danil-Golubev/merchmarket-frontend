@@ -1,0 +1,28 @@
+.oneBlock{
+    height: 100px;
+    width: 75%;
+    border: 0.5px solid black;;
+    display: flex;
+    border-collapse: collapse;
+
+    align-items: center;
+    
+}
+.blockItem{
+    list-style-type: none;
+}
+.liItem{
+    display:inline
+    
+}
+.imageBlock{
+  
+    height: 100%
+}
+.size{
+    position: absolute;
+    margin-left: 35%
+}
+.title{
+    margin-left:12px;
+}
