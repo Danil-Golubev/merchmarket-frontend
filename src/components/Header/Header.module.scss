@@ -146,8 +146,8 @@ font-size: 4vw;
     right: 0;
 }
 .pageslist{
-padding-left: 20px;
-gap: 1vw;
+padding-left: 13vw;
+gap: 13vw;
 display: flex;
 list-style: none;
 }
@@ -164,33 +164,47 @@ list-style: none;
         border-right: 0;
     }
     .pageslist{
-        font-size: 4vw;
+        padding-left: 50vw;
+        gap: 100vw;
     }
+
  }
 
 
  @media (min-width:1540px){
     .pageslist{
-        font-size: 1.2vw;
+        font-size: 1.6vw;
     }
+
+    .pageslist{
+        padding-left: 7vw;
+        gap: 4vw;
+    }
+
  }
  @media (max-width:1540px){
     .pageslist{
-        font-size: 1.2vw;
+        padding-left: 7vw;
+        gap: 4vw;
     }
+    
  }
  @media (max-width:1100px){
     .pageslist{
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
+        
+    .pageslist{
+        padding-left: 12vw;
+        gap: 12vw;
+    }
+
  }
  @media (max-width:450px){
     .pageslist{
         font-size: 2.1vw;
     }
-    .pageslist{
-        padding-left: 5px;
-    }
+
 
     .Header{
         height: 20vw;

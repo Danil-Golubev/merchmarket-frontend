@@ -6,13 +6,14 @@ export const ItemContainer= ({imageUrl, title, price, sizes, id})=>{
 
         <div className={styles.container}>
         <Link to = {`/item/${id}`}>
-            <img className = {styles.imageUrl} src = {imageUrl}/>
+            <img className = {styles.imageUrl} src = {imageUrl} alt ={title}/>
             <div className={styles.textBlock}>
            <div className={styles.mainBlock}>
             <div className={styles.title}>{title}</div>
+            </div>
+            <div className={styles.block}>
             <div className={styles.price}>{price}</div>
             </div>
-            <div className={styles.sizes}>{sizes}</div>
             </div>
             </Link>
         </div> 

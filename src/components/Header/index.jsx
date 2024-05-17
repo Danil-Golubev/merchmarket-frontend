@@ -32,8 +32,7 @@ export const Header = ()=>{
    <Link to = "/"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
     <li> <div className={styles.pagetitle}>Contact </div></li>
     <li> <div className={styles.pagetitle}>FAQs </div></li>
-    <li> <div className={styles.pagetitle}>Shipping </div></li>
-    <li> <div className={styles.pagetitle}>Refund policy </div></li>
+
     </ul>
     </div></div>
     </div>

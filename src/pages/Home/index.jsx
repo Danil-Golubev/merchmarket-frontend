@@ -33,8 +33,8 @@ export const Home = ()=>{
         <ItemContainer
         imageUrl = {item.imageUrl}
         title = {item.title}
-        price = { item.price + ' $'}
-        sizes = {[1,2,3]}
+        price = {'$'+ item.price+'.00'}
+        
         id ={item._id}
         /> 
        )}   
