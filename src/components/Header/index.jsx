@@ -30,7 +30,7 @@ export const Header = ()=>{
     <div className={styles.halfblocklist}><div className={styles.halfblockcontent}>Pages:
 <ul className= {styles.pageslist}>
    <Link to = "/"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
-    <li> <div className={styles.pagetitle}>Contact </div></li>
+   <Link to = "/contact"><li> <div className={styles.pagetitle}>Contact </div></li></Link>
     <li> <div className={styles.pagetitle}>FAQs </div></li>
 
     </ul>
