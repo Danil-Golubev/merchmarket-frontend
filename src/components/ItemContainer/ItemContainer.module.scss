@@ -54,7 +54,7 @@ width: 90%;
     margin:0;
 }
 .imageUrl{
-    height: auto;
+    height: 100%;
     overflow: hidden;;
     display: flex;
     position: relative;
@@ -64,6 +64,9 @@ width: 90%;
     .container{
         width: 25%;
         height: 37vw;
+    }
+    .textBlock{
+        font-size: 1vw;
     }
 
 

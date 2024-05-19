@@ -5,33 +5,36 @@
 }
 
 .Header{
+
     font-size: 2fw;
-    overflow: hidden;
+
     width: 100%;
-    height: 10vw;
+    height: 5vw;
     display: flex;
     flex-wrap:wrap;
 
 }
 
-.container{
-    height: 80%;
-    width: 80%;
+.ulBottom{
+    list-style: none;
+}
 
-}
-.Cart{
-    position: static;;
-    font-size: 50px;
-    float:right;
-}
+
 .ul{
     
     list-style: none;
 }
+.blocktitleBottomContent{
 
-.blocktitle{
+    margin-left:5%;
+    margin-top:2%;
+    width: 90%;
+    height: 80%;
+}
+.blocktitleBottom{
+    
     width: 25%;
-    height: 100%;
+    height: auto;
         object-fit: contain;
         box-sizing: border-box;
         position: relative;
@@ -45,29 +48,22 @@
         position: relative;
 
 }
-.block2{
-    width: 50%;
-    height: auto;
-        object-fit: contain;
-        box-sizing: border-box;
-        position: relative;
 
+
+input{
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font: 13px sans-serif
 }
 
 
 
-.halfblockcontent{
 
-    display: flex;
-    align-items: center;
 
-    width: 95%;
-    height: 80%;
-    font-size: 2vw;
-}
-
-.halfblock{
-
+.halfblockdiagBottom{
     justify-content: center;
     display: flex;
     align-items: center;
@@ -77,41 +73,7 @@
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 50%;
-    object-fit: contain;
-    box-sizing: border-box;
-    position: relative;
-    border:0.25px solid #000000cc;
-
-}
-.halfblocklist{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
-    box-sizing: border-box;
-    position: relative;
-    border:0.25px solid #000000cc;
-
-}
-.halfblockdiag{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: contain;
     box-sizing: border-box;
     position: relative;
@@ -119,7 +81,7 @@
 
 }
 
-.diag{
+.diagBottom{
     width: 100%;
     height: 100%;
     background:linear-gradient(to bottom right, transparent calc(50% - 1px), black calc(50% - 1px), black 50%, transparent 50%),
@@ -135,7 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-font-size: 4vw;
+font-size: 1.4vw;
 }
 
 .pagetitle{
@@ -155,11 +117,11 @@ list-style: none;
 
 
  @media (max-width:1100px){
-    .halfblockdiag{
+    .halfblockdiagBottom{
         width: 0;
         height: 0;
     }
-    .halfblocklist{
+    .halfblocklistBottom{
         width: 150%;
         border-right: 0;
     }
@@ -172,43 +134,21 @@ list-style: none;
 
 
  @media (min-width:1540px){
-    .pageslist{
-        font-size: 1.6vw;
-    }
-
-    .pageslist{
-        padding-left: 4vw;
-        gap: 4vw;
+    .halfblocklistBottom{
+        width: 150%;
+        border-right: 0;
     }
 
  }
  @media (max-width:1540px){
-    .pageslist{
-        padding-left: 4vw;
-        gap: 4vw;
-    }
     
  }
  @media (max-width:1100px){
-    .pageslist{
-        font-size: 2.4vw;
-    }
-        
-    .pageslist{
-        padding-left: 6vw;
-        gap: 12vw;
-    }
+
 
  }
  @media (max-width:450px){
-    .pageslist{
-        font-size: 2.1vw;
-    }
 
-
-    .Header{
-        height: 20vw;
-    }
  }
  *{
     text-decoration: none;
