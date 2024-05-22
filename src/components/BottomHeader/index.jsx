@@ -19,7 +19,7 @@ export const BottomHeader = ()=>{
         <div className={styles.diagBottom}></div>
         </div>
     </div>
-    <div className={styles.blocktitleBottom}>
+    <div className={styles.blocktitleBottomUl}>
     <div className={styles.blocktitleBottomContent}>
     <ul className={styles.ulBottom}>
 <li>Follow</li>
@@ -34,7 +34,7 @@ export const BottomHeader = ()=>{
     <div className={styles.blocktitleBottomContent}>
     <ul className={styles.ulBottom}>
 <li>Enter the email</li>
-<input type='text' title ={'enter the email here'}></input>
+<input className = {styles.input}type='text' title     ={'enter the email here'}></input>
 
       </ul>
 

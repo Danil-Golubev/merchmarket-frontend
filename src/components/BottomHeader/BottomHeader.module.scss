@@ -5,9 +5,7 @@
 }
 
 .Header{
-
     font-size: 2fw;
-
     width: 100%;
     height: 5vw;
     display: flex;
@@ -33,6 +31,7 @@
 }
 .blocktitleBottom{
     
+    background-color: green;
     width: 25%;
     height: auto;
         object-fit: contain;
@@ -50,7 +49,8 @@
 }
 
 
-input{
+.input{
+    width: 100%;
     border: 0;
     border-bottom: 1px solid black;
     padding: 0;
@@ -64,6 +64,7 @@ input{
 
 
 .halfblockdiagBottom{
+    background-color: red;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -79,6 +80,16 @@ input{
     position: relative;
     border:0.25px solid #000000cc;
 
+}
+
+.blocktitleBottomUl{
+ 
+    width: 25%;
+    height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+        position: relative;
+        border:0.25px solid #000000cc;
 }
 
 .diagBottom{
@@ -117,38 +128,44 @@ list-style: none;
 
 
  @media (max-width:1100px){
+
     .halfblockdiagBottom{
-        width: 0;
-        height: 0;
+       display: none;
+       background-color: aqua;
     }
-    .halfblocklistBottom{
-        width: 150%;
-        border-right: 0;
+    .blocktitleBottomUl{
+right: 25%;
+        width: 50%;   
     }
-    .pageslist{
-        padding-left: 50vw;
-        gap: 100vw;
+    .blocktitleBottom{
+        width: 25%;
     }
 
  }
 
 
  @media (min-width:1540px){
-    .halfblocklistBottom{
-        width: 150%;
-        border-right: 0;
-    }
+  
 
  }
  @media (max-width:1540px){
     
  }
  @media (max-width:1100px){
-
+    .blocktitleBottom{
+        font-size: 2.4vw;
+    }
 
  }
  @media (max-width:450px){
+    .blocktitleBottom{
+        font-size: 2.1vw;
+    }
 
+
+    .Header{
+        height: 20vw;
+    }
  }
  *{
     text-decoration: none;
