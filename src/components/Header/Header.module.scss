@@ -4,11 +4,13 @@
 
 }
 
+
+
+
 .Header{
     font-size: 2fw;
-    overflow: hidden;
     width: 100%;
-    height: 10vw;
+    height: 11vw;
     display: flex;
     flex-wrap:wrap;
 
@@ -21,7 +23,7 @@
 }
 .Cart{
     position: static;;
-    font-size: 50px;
+    font-size: 1vw;
     float:right;
 }
 .ul{
@@ -56,17 +58,39 @@
 
 
 
-.halfblockcontent{
 
-    display: flex;
+
+.halfblockcontent, .halfblockcontentBag, .halfblockcontentTitleTag {
+
     align-items: center;
-
-    width: 95%;
+    display: flex;
+    width: 80%;
     height: 80%;
-    font-size: 2vw;
+    font-size: 1.7vw;
+}
+.halfblockcontentBag{
+    height: 100%;
+    font-size: 1.6vw;
+    width: 80%;
+
 }
 
-.halfblock{
+.bag{
+
+    width: 50%;
+    text-align: left;
+}
+.amount{
+    width: 50%;
+    font-style: italic;
+text-align: right;
+}
+
+.amountTag{
+   font-style: normal;
+}
+
+.halfblock1{
 
     justify-content: center;
     display: flex;
@@ -76,7 +100,6 @@
     position: relative;
     justify-content: center;
     display: flex;
-    width: 100%;
     height: 50%;
     object-fit: contain;
     box-sizing: border-box;
@@ -84,6 +107,24 @@
     border:0.25px solid #000000cc;
 
 }
+.halfblock2{
+  
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    height: 50%;
+    object-fit: contain;
+    box-sizing: border-box;
+    position: relative;
+    border:0.25px solid #000000cc;
+
+}
+
 .halfblocklist{
     justify-content: center;
     display: flex;
@@ -135,28 +176,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-font-size: 4vw;
+font-size: 3vw;
 }
 
 .pagetitle{
-   margin-left:0;
+ 
 
 }
 .amount{
     right: 0;
 }
-.pageslist{
+.pageslist, .pageslist2{
 padding-left: 13vw;
 gap: 13vw;
 display: flex;
 list-style: none;
 }
-
+.pageslist{
+    padding-left: 10vw;
+    gap: 10vw;
+}
 
 
  @media (max-width:1100px){
     .halfblockdiag{
-        width: 0;
+        width: 0; 
         height: 0;
     }
     .halfblocklist{
@@ -165,41 +209,78 @@ list-style: none;
     }
     .pageslist{
         padding-left: 50vw;
-        gap: 100vw;
+        gap: 10vw;
     }
-
+    .halfblock1{
+        padding-left: 2.4vw;
+    }
  }
 
 
  @media (min-width:1540px){
-    .pageslist{
-        font-size: 1.6vw;
-    }
 
     .pageslist{
-        padding-left: 4vw;
-        gap: 4vw;
+        padding-left: 6vw;
+        gap: 6vw;
+        font-size: 1vw;
     }
-
+    .halfblockcontent{
+        font-size: 1vw;
+    }
+    .halfblockcontentBag{
+        font-size: 0.8vw;
+    }
+    .Header{
+        height: 8vw;
+    }
  }
  @media (max-width:1540px){
     .pageslist{
-        padding-left: 4vw;
-        gap: 4vw;
-    }
-    
- }
- @media (max-width:1100px){
-    .pageslist{
-        font-size: 2.4vw;
-    }
-        
-    .pageslist{
-        padding-left: 6vw;
-        gap: 12vw;
+        font-size: 1.3vw;
     }
 
+    .pageslist{
+        padding-left: 6vw;
+        gap: 6vw;
+        font-size: 1.3vw;
+    }
+    .halfblockcontentBag{
+        font-size: 1vw;
+    
+    }
  }
+
+
+ @media (max-width:1100px){
+    .pageslist{
+        padding-left: 10vw;
+        gap: 10vw;
+    }
+    .Header{
+        height: 16vw;
+    }
+    .pageslist{
+        font-size: 2vw;
+    }
+    .halfblockcontentBag{
+        font-size: 1.4vw;
+    
+    }
+ }
+
+ @media (max-width:800px){
+    .pageslist{
+        font-size: 2.1vw;
+    }
+    .Header{
+        height: 20vw;
+    }
+    .halfblockcontentBag{
+        font-size: 2vw;
+    
+    }
+ }
+
  @media (max-width:450px){
     .pageslist{
         font-size: 2.1vw;
@@ -210,7 +291,11 @@ list-style: none;
         height: 20vw;
     }
  }
+
+
+ 
  *{
     text-decoration: none;
     color: black;
+   
  }

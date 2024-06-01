@@ -1,8 +1,6 @@
 .container{
-    height: 35vw;
-    width:25%;
     width: 50%;
-    height: 65vw;
+    height: auto;
     background-color: #ecececcc;
     object-fit: contain;
     box-sizing: border-box;
@@ -60,13 +58,21 @@ width: 90%;
     position: relative;
     width: 100%;
 }
-@media (min-width:1300px){
+@media (min-width:1100px){
     .container{
         width: 25%;
-        height: 37vw;
+        height: auto;
     }
     .textBlock{
         font-size: 1vw;
+    }
+
+
+}
+@media (max-width:1100px){
+
+    .textBlock{
+        font-size: 1.8vw;
     }
 
 
@@ -75,13 +81,11 @@ width: 90%;
 @media (max-width:1300px){
 
     .container{
-        height: 75vw;
+        height: auto;
         
     
     }
-    .textBlock{
-        font-size: 2.4vw;
-    }
+
 
 }
 
