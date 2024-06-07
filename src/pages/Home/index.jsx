@@ -1,4 +1,5 @@
 import { ItemContainer } from "../../components/ItemContainer"
+import { ItemContainerSkeleton } from "../../components/ItemContainerSkeleton"
 import {Link} from 'react-router-dom'
 import styles from './Home.module.scss';
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +25,20 @@ export const Home = ()=>{
    }, [])
    console.log(items)
    if(isLodaing){
-      return (<><h1>lOADING</h1></>)
+      return (<>
+     <div className={styles.container}>
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    <ItemContainerSkeleton/> 
+    </div>
+   
+      
+      </>)
    }
     return(
         <>  

@@ -4,7 +4,10 @@
 
 }
 
-
+.image{
+    width: 90%;
+    height: 90%;
+}
 
 
 .Header{
@@ -40,6 +43,7 @@
         border:0.25px solid #000000cc;
 }
 .block{
+  
     width: 25%;
     height: auto;
         object-fit: contain;
@@ -48,6 +52,7 @@
 
 }
 .block2{
+
     width: 50%;
     height: auto;
         object-fit: contain;
@@ -67,6 +72,7 @@
     width: 80%;
     height: 80%;
     font-size: 1.7vw;
+   
 }
 .halfblockcontentBag{
     height: 100%;
@@ -108,7 +114,6 @@ text-align: right;
 
 }
 .halfblock2{
-  
     justify-content: center;
     display: flex;
     align-items: center;
@@ -119,9 +124,10 @@ text-align: right;
     display: flex;
     height: 50%;
     object-fit: contain;
-    box-sizing: border-box;
+
     position: relative;
-    border:0.25px solid #000000cc;
+    border-left:0.25px solid #000000cc;
+
 
 }
 
@@ -140,6 +146,7 @@ text-align: right;
     box-sizing: border-box;
     position: relative;
     border:0.25px solid #000000cc;
+
 
 }
 .halfblockdiag{
@@ -198,7 +205,8 @@ list-style: none;
 }
 
 
- @media (max-width:1100px){
+ @media (max-width:1200px){
+
     .halfblockdiag{
         width: 0; 
         height: 0;
@@ -210,10 +218,36 @@ list-style: none;
     .pageslist{
         padding-left: 50vw;
         gap: 10vw;
+       
     }
-    .halfblock1{
-        padding-left: 2.4vw;
+
+    .halfblockcontent{
+     
+        color: grey;
+        width: 95%;
     }
+
+    .halfblockcontentBag{
+    
+        font-size: 1.4vw;
+    
+    }
+
+    .pageslist{
+        padding-left: 10vw;
+        gap: 10vw;
+    }
+    .Header{
+        height: 16vw;
+    }
+    .pageslist{
+        font-size: 2.5vw;
+    }
+    .halfblockcontentBag{
+        font-size: 1.6vw;
+    
+    }
+ 
  }
 
 
@@ -248,47 +282,44 @@ list-style: none;
         font-size: 1vw;
     
     }
- }
-
-
- @media (max-width:1100px){
-    .pageslist{
-        padding-left: 10vw;
-        gap: 10vw;
-    }
-    .Header{
-        height: 16vw;
-    }
-    .pageslist{
-        font-size: 2vw;
-    }
-    .halfblockcontentBag{
-        font-size: 1.4vw;
-    
+    .halfblockcontent{
+        
+        font-size: 1.3vw;
     }
  }
 
- @media (max-width:800px){
+
+ @media (max-width:1200px){
     .pageslist{
-        font-size: 2.1vw;
+        padding-left: 8vw; // was 8
+        gap: 8vw;          // was 8 
     }
     .Header{
         height: 20vw;
     }
+    .pageslist{
+        font-size: 3.5vw;
+    }
     .halfblockcontentBag{
-        font-size: 2vw;
+        font-size: 2.9vw;
+        
     
     }
+    .halfblockcontent{
+        
+        font-size: 3vw;
+    }
  }
+
 
  @media (max-width:450px){
-    .pageslist{
-        font-size: 2.1vw;
-    }
-
 
     .Header{
         height: 20vw;
+    }
+    .pageslist{
+        padding-left: 7vw; // was 8
+        gap: 7vw;          // was 8 
     }
  }
 
@@ -299,3 +330,42 @@ list-style: none;
     color: black;
    
  }
+
+
+
+ /* latin-ext */
+ @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+
+  
+*{
+    font-family: 'Inter',sans-serif ;
+    color:black;
+
+}
+
+
+
+.pagetitle:hover{
+    text-decoration: line-through;
+}
+
+.block:hover{
+
+}
+
+.halfblockcontentBag:hover {
+    text-decoration: line-through;
+}
+
+.block {
+    /* Ваши стили для блока */
+  }
+  

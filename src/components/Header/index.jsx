@@ -30,7 +30,9 @@ export const Header = ()=>{
     return(
         <>
         <div className={styles.Header}>
-    <div className={styles.blocktitle}><div className={styles.title}>Yung lean world</div></div>
+    <div className={styles.blocktitle}><div className={styles.title}>
+    <img className={styles.image} src={'https://na.yungleangear.com/cdn/shop/t/4/assets/logo.svg?v=83476718230062498121697746479' } />
+        </div></div>
     <div className={styles.block2}>
     <div className={styles.halfblocklist}><div className={styles.halfblockcontent}>You're on:
 
@@ -42,7 +44,7 @@ export const Header = ()=>{
       </div>
     <div className={styles.halfblocklist}><div className={styles.halfblockcontent}>Pages:
 <ul className= {styles.pageslist}>
-   <Link to = "/"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
+ <Link to = "/"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
    <Link to = "/contact"><li> <div className={styles.pagetitle}>Contact </div></li></Link>
     <li> <div className={styles.pagetitle}>FAQs </div></li>
 
@@ -55,11 +57,11 @@ export const Header = ()=>{
     <div className={styles.halfblock2}>
         <div className={styles.halfblockcontentBag}>
         <div className={styles.bag}>
-        <div className={styles.bagTag}>Items:</div>
+        <div className={styles.bagTag}>Items</div>
         {`${totalItems}`}
 </div>
     <div className={styles.amount}>
-    <div className={styles.amountTag}>Amount:</div>
+    <div className={styles.amountTag}>Amount</div>
    {`$${totalAmount}.00`}
    </div>
     </div> 
@@ -73,7 +75,7 @@ export const Header = ()=>{
     </div>
 
             </div>
-        
+
         </>
     )
 }
