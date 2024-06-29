@@ -1,28 +1,63 @@
 .oneBlock{
     height: 100px;
-    width: 75%;
-    border: 0.5px solid black;;
+    width: 100%;
+    border: 0.25px solid black;;
     display: flex;
     border-collapse: collapse;
-
     align-items: center;
     
 }
 .blockItem{
     list-style-type: none;
+    position: relative;
 }
 .liItem{
-    display:inline
-    
+    display:inline;
+    position: relative;
 }
 .imageBlock{
-  
     height: 100%
 }
 .size{
-    position: absolute;
-    margin-left: 35%
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 10%;
+  ;
 }
 .title{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+   
     margin-left:12px;
+}
+
+.secondBlock{
+    height: 100px;
+    width: 25%;
+    border: 0.25px solid black;;
+    display: flex;
+    border-collapse: collapse;
+    align-items: center;
+}
+.content{
+display: flex;
+} 
+
+.leftBlock{
+    border-collapse: collapse;
+    width: 75%;
+    min-height: 800px;
+}
+.rightBlock{
+    border: 0.25px solid black;;
+    display: flex;
+    border-collapse: collapse;
+    align-items: center;
+
+    width: 25%;
+    min-height: 800px;
 }
