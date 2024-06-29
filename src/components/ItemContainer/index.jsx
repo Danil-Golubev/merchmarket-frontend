@@ -5,7 +5,7 @@ export const ItemContainer= ({imageUrl, title, price, sizes, id})=>{
         <>
 
         <div className={styles.container}>
-        <Link to = {`/item/${id}`}>
+        <Link to = {`merchmarket-frontend/item/${id}`}>
             <img className = {styles.imageUrl} src = {imageUrl} alt ={title}/>
             <div className={styles.textBlock}>
            <div className={styles.mainBlock}>
