@@ -9,10 +9,13 @@ import { Button } from 'react-bootstrap';
 export const Cart = ()=>{
     const storedObjects = JSON.parse(localStorage.getItem('cart') || '[]')
 
+
+    if(storedObjects.lenght){
     return(
         <>
         <div className={styles.content}>
             <div className={styles.leftBlock}>
+         
          
         {storedObjects.map((item)=>(
    
@@ -34,4 +37,4 @@ export const Cart = ()=>{
 
 </>
     )
-}
+}}

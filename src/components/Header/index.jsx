@@ -44,8 +44,8 @@ export const Header = ()=>{
       </div>
     <div className={styles.halfblocklist}><div className={styles.halfblockcontent}>Pages:
 <ul className= {styles.pageslist}>
- <Link to = "/merchmarket-frontend"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
-   <Link to = "/merchmarket-frontend/contact"><li> <div className={styles.pagetitle}>Contact </div></li></Link>
+ <Link to = "/merchmarket-frontend/"> <li> <div className={styles.pagetitle}>All items </div></li></Link>
+   <Link to = "/merchmarket-frontend/contact/"><li> <div className={styles.pagetitle}>Contact </div></li></Link>
     <li> <div className={styles.pagetitle}>FAQs </div></li>
 
     </ul>
@@ -53,7 +53,7 @@ export const Header = ()=>{
     </div>
 
     <div className={styles.block}>
-    <Link to = "/merchmarket-frontend/cart">
+    <Link to = "/merchmarket-frontend/cart/">
     <div className={styles.halfblock2}>
         <div className={styles.halfblockcontentBag}>
         <div className={styles.bag}>

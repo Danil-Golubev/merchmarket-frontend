@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/merchmarket-frontend/static/css/main.b26a7555.css",
-    "main.js": "/merchmarket-frontend/static/js/main.9e9a12d4.js",
+    "main.js": "/merchmarket-frontend/static/js/main.a1da433f.js",
     "index.html": "/merchmarket-frontend/index.html",
     "main.b26a7555.css.map": "/merchmarket-frontend/static/css/main.b26a7555.css.map",
-    "main.9e9a12d4.js.map": "/merchmarket-frontend/static/js/main.9e9a12d4.js.map"
+    "main.a1da433f.js.map": "/merchmarket-frontend/static/js/main.a1da433f.js.map"
   },
   "entrypoints": [
     "static/css/main.b26a7555.css",
-    "static/js/main.9e9a12d4.js"
+    "static/js/main.a1da433f.js"
   ]
 }
