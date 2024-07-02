@@ -13,11 +13,11 @@ function App() {
 <>
 <StrictMode>
 <Header/>
-<Routes basement = "/merchmarket-frontend">
-<Route path = "/" element = {<Home/>}/>
-<Route path = "/contact" element = {<Contact/>}/>
-<Route path = "/item/:id" element = {<Product/>}/>
-<Route path = "/cart" element = {<Cart/>}/>
+<Routes>
+<Route path = "/merchmarket-frontend" element = {<Home/>}/>
+<Route path = "merchmarket-frontend/contact" element = {<Contact/>}/>
+<Route path = "merchmarket-frontend/item/:id" element = {<Product/>}/>
+<Route path = "merchmarket-frontend/cart" element = {<Cart/>}/>
 </Routes>
 <BottomHeader/>
 </StrictMode>
