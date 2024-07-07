@@ -20,9 +20,10 @@ export const Cart = ()=>{
    <div className={styles.title} >{item.title}-</div>
    <div className={styles.size}>{item.selectedSize}</div>
    <div className={styles.count}>
-    <Button >-</Button>
-    {item.count}
-    <Button>+</Button>
+    <Button className={styles.customButton}>-</Button>
+    <div className={styles.customButton}>
+    {item.count}</div>
+    <Button className={styles.customButton}>+</Button>
     <div></div>
     </div></div>
    ))}

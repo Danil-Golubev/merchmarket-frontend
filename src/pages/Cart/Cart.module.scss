@@ -61,3 +61,45 @@ display: flex;
     width: 25%;
     min-height: 800px;
 }
+
+.customButton{
+    justify-content: center;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border:1px solid black;
+    background-color: white;
+}
+
+.count{
+    display:flex;
+}
+
+@media (max-width:1200px){
+.content{
+    display: flex;
+}
+    .leftBlock{
+        width: 100%;
+    }
+    .rightBlock{
+        display: none;
+    }
+    .oneBlock{
+        height: 130px;
+    }
+    .title{
+     
+        width: 250%;
+        
+    }
+    .size{
+ 
+        width:40%;
+    }
+    .count{
+
+        width: 40%;
+    }
+
+ }
