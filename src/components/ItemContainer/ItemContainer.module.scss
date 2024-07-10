@@ -1,98 +1,80 @@
-.container{
-    width: 50%;
-    height: auto;
-    background-color: #ecececcc;
-    object-fit: contain;
-    box-sizing: border-box;
-    position: relative;
-    border:0.25px solid #000000cc;
-    overflow: hidden;;
+.container {
+	width: 50%;
+	height: auto;
+	background-color: #ecececcc;
+	object-fit: contain;
+	box-sizing: border-box;
+	position: relative;
+	border: 0.25px solid #000000cc;
+	overflow: hidden;
 }
 
-.price{
-    font-style: italic;
+.price {
+	font-style: italic;
 }
-.mainBlock{
-    
- 
-    width: 80%;
-    display: flex;
+.mainBlock {
+	width: 80%;
+	display: flex;
 }
 
-.block{
-   align-items: end;
-    top: 0px;
-    right: 0px;
-    position:absolute;
- 
-    width: 20%;
-    height: 100%;
-    display: flex;
+.block {
+	align-items: end;
+	top: 0px;
+	right: 0px;
+	position: absolute;
 
+	width: 20%;
+	height: 100%;
+	display: flex;
 }
 
-.textBlock{
-
-text-align:left;
-font-size: 1.3vw;
-position:absolute; 
-bottom:20px;
-left:5%; 
-width: 90%;
-
+.textBlock {
+	text-align: left;
+	font-size: 1.3vw;
+	position: absolute;
+	bottom: 20px;
+	left: 5%;
+	width: 90%;
 }
-.price{
-
-    position:absolute; 
-   color:black;
-   right: 0;
- 
+.price {
+	position: absolute;
+	color: black;
+	right: 0;
 }
-*{
-    margin:0;
+* {
+	margin: 0;
 }
-.imageUrl{
-    height: 100%;
-    overflow: hidden;;
-    display: flex;
-    position: relative;
-    width: 100%;
+.imageUrl {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	position: relative;
+	width: 100%;
 }
-@media (min-width:1200px){
-    .container{
-        width: 25%;
-        height: auto;
-    }
-    .textBlock{
-        font-size: 1vw;
-    }
-
-
+@media (min-width: 1200px) {
+	.container {
+		width: 25%;
+		height: auto;
+	}
+	.textBlock {
+		font-size: 1vw;
+	}
 }
-@media (max-width:1200px){
-
-    .textBlock{
-        font-size: 2.3vw;
-    }
-
-
+@media (max-width: 1200px) {
+	.textBlock {
+		font-size: 2.3vw;
+	}
 }
 
-@media (max-width:1200px){
-
-    .container{
-        height: auto;
-        
-    
-    }
-
-
+@media (max-width: 1200px) {
+	.container {
+		height: auto;
+	}
 }
 
-
-.container:hover .textBlock{
-    text-decoration:line-through;
+.container:hover .textBlock {
+	text-decoration: line-through;
 }
-.container:hover .price{
-    text-decoration:line-through;
+.container:hover .price {
+	text-decoration: line-through;
 }

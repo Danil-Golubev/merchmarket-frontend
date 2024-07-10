@@ -1,105 +1,87 @@
-.oneBlock{
-    height: 100px;
-    width: 100%;
-    border: 0.25px solid black;;
-    display: flex;
-    border-collapse: collapse;
-    align-items: center;
-    
+.oneBlock {
+	height: 100px;
+	width: 100%;
+	border: 0.25px solid black;
+	display: flex;
+	border-collapse: collapse;
+	align-items: center;
 }
-.blockItem{
-    list-style-type: none;
-    position: relative;
+.blockItem {
+	list-style-type: none;
+	position: relative;
 }
-.liItem{
-    display:inline;
-    position: relative;
+.liItem {
+	display: inline;
+	position: relative;
 }
-.imageBlock{
-    height: 100%
+.imageBlock {
+	height: 100%;
 }
-.size{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 10%;
-  ;
+.size {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 10%;
 }
-.title{
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 50%;
-   
-    margin-left:12px;
+.title {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 50%;
+
+	margin-left: 12px;
 }
 
-.secondBlock{
-    height: 100px;
-    width: 25%;
-    border: 0.25px solid black;;
-    display: flex;
-    border-collapse: collapse;
-    align-items: center;
+.secondBlock {
+	height: 100px;
+	width: 25%;
+	border: 0.25px solid black;
+	display: flex;
+	border-collapse: collapse;
+	align-items: center;
 }
-.content{
-display: flex;
-} 
-
-.leftBlock{
-    border-collapse: collapse;
-    width: 75%;
-    min-height: 800px;
-}
-.rightBlock{
-    border: 0.25px solid black;;
-    display: flex;
-    border-collapse: collapse;
-    align-items: center;
-
-    width: 25%;
-    min-height: 800px;
+.content {
+	display: flex;
 }
 
-.customButton{
-    justify-content: center;
-    display: flex;
-    height: 30px;
-    width: 30px;
-    border:1px solid black;
-    background-color: white;
+.leftBlock {
+	flex: 1;
+	border-collapse: collapse;
+	width: 75%;
+}
+.rightBlock {
+	flex: 2;
+	border: 0.25px solid black;
+	display: flex;
+	border-collapse: collapse;
+	align-items: center;
+	width: 25%;
+	min-height: 800px;
 }
 
-.count{
-    display:flex;
+.customButton {
+	justify-content: center;
+	display: flex;
+	height: 30px;
+	width: 30px;
+	border: 1px solid black;
+	background-color: white;
 }
 
-@media (max-width:1200px){
-.content{
-    display: flex;
+.count {
+	display: flex;
 }
-    .leftBlock{
-        width: 100%;
-    }
-    .rightBlock{
-        display: none;
-    }
-    .oneBlock{
-        height: 130px;
-    }
-    .title{
-     
-        width: 250%;
-        
-    }
-    .size{
- 
-        width:40%;
-    }
-    .count{
 
-        width: 40%;
-    }
-
- }
+@media (max-width: 1200px) {
+	.content {
+		display: grid;
+	}
+	.leftBlock {
+		width: 100%;
+		min-height: auto;
+	}
+	.rightBlock {
+		width: 100%;
+	}
+}

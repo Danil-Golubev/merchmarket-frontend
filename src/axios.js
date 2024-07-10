@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios';
 
- const instance = axios.create({
-    baseURL:"https://merchmarket-backend.onrender.com/"
-})
+const instance = axios.create({
+	baseURL: 'https://merchmarket-backend.onrender.com/',
+});
 export default instance;
