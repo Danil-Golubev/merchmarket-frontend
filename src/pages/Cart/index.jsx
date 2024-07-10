@@ -1,6 +1,8 @@
-import styles from './Cart.module.scss';
 import React from 'react';
+
 import { Button } from 'react-bootstrap';
+
+import styles from './Cart.module.scss';
 
 export const Cart = () => {
 	const storedObjects = JSON.parse(localStorage.getItem('cart') || '[]');
@@ -10,6 +12,7 @@ export const Cart = () => {
 			<div className={styles.content}>
 				<div className={styles.leftBlock}>
 					{storedObjects.map((item) => (
+						// eslint-disable-next-line react/jsx-key
 						<div className={styles.oneBlock}>
 							<img className={styles.imageBlock} src={item.imageUrl}></img>
 							<div className={styles.title}>{item.title}-</div>

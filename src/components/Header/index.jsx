@@ -1,8 +1,9 @@
-import styles from './Header.module.scss';
-import { Link } from 'react-router-dom';
 import React from 'react';
-import { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
+
+import styles from './Header.module.scss';
+
 export const Header = () => {
 	const [totalAmount, setTotalAmount] = React.useState(0);
 	const [totalItems, setTotalItems] = React.useState(0);
@@ -34,7 +35,7 @@ export const Header = () => {
 				</div>
 				<div className={styles.block2}>
 					<div className={styles.halfblocklist}>
-						<div className={styles.halfblockcontent}>You're on:</div>
+						<div className={styles.halfblockcontent}>Youre on:</div>
 
 						<div className={styles.halfblockcontentTitle}></div>
 					</div>

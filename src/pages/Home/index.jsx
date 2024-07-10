@@ -1,10 +1,10 @@
+import React from 'react';
+
+import { useDispatch } from 'react-redux';
+
+import styles from './Home.module.scss';
 import { ItemContainer } from '../../components/ItemContainer';
 import { ItemContainerSkeleton } from '../../components/ItemContainerSkeleton';
-import { Link } from 'react-router-dom';
-import styles from './Home.module.scss';
-import { useDispatch, useSelector } from 'react-redux';
-import axios from '../../axios';
-import React from 'react';
 import { fetchGetItems } from '../../redux/slices/items';
 
 export const Home = () => {
@@ -44,7 +44,8 @@ export const Home = () => {
 		<>
 			<div className={styles.container}>
 				{items.map((item) => (
-					<ItemContainer imageUrl={item.imageUrl} title={item.title} price={'$' + item.price + '.00'} id={item._id} />
+					// eslint-disable-next-line react/jsx-key
+					<ItemContainer id={item._id} imageUrl={item.imageUrl} price={'$' + item.price + '.00'} title={item.title} />
 				))}
 			</div>
 		</>

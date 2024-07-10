@@ -161,12 +161,7 @@ module.exports = {
 		// typescript
 		{
 			files: ['*.{ts,tsx}'],
-			extends: [
-				'airbnb-typescript',
-				'plugin:prettier/recommended',
-				'plugin:@typescript-eslint/recommended',
-				'plugin:import/typescript',
-			],
+			extends: ['plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
 			rules: {
 				'@typescript-eslint/explicit-module-boundary-types': 0, // Выключает требование явного указания типов входных параметров и возвращаемых типов функций в TypeScript
 				'no-shadow': 'off',
