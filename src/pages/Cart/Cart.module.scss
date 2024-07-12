@@ -1,36 +1,42 @@
 .oneBlock {
 	height: 100px;
+	max-height: 200px;
 	width: 100%;
 	border: 0.25px solid black;
 	display: flex;
 	border-collapse: collapse;
 	align-items: center;
 }
-.blockItem {
-	list-style-type: none;
-	position: relative;
+
+.oneBlockContent {
+	width: 90%;
+	height: 90%;
 }
-.liItem {
-	display: inline;
-	position: relative;
-}
+
 .imageBlock {
 	height: 100%;
 }
+
 .size {
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	height: 100%;
-	width: 10%;
+	width: 20%;
 }
 .title {
-	align-items: center;
-	display: flex;
+	padding-top: 16px;
+	padding-left: 16px;
 	height: 100%;
-	width: 50%;
+	width: 30%;
+}
+.price {
+	height: 50%;
+	width: 20%;
 
-	margin-left: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .secondBlock {
@@ -46,18 +52,17 @@
 }
 
 .leftBlock {
-	flex: 1;
 	border-collapse: collapse;
 	width: 75%;
 }
 .rightBlock {
-	flex: 2;
 	border: 0.25px solid black;
 	display: flex;
 	border-collapse: collapse;
 	align-items: center;
 	width: 25%;
-	min-height: 800px;
+	min-height: 600px;
+	justify-content: center;
 }
 
 .customButton {
@@ -71,8 +76,50 @@
 
 .count {
 	display: flex;
+	width: 10%;
+}
+.purchaseButton {
+	font-size: 1vw;
+	height: 100px;
+	width: 100%;
+	border: 1px solid black;
+	background-color: white;
 }
 
+.smileSvg {
+	height: 5vw;
+	width: 100%;
+	padding-bottom: 2vw;
+}
+
+.infoBox {
+	margin-top: 15px;
+	padding-bottom: 20px;
+	font-size: 0.5vw;
+	font-style: italic;
+}
+.rightBlockContent {
+	width: 90%;
+	max-height: 400px;
+}
+.totalLine {
+	display: flex;
+	gap: 1vw;
+	padding-bottom: 1vw;
+}
+.totalMainTitle {
+	font-size: 1vw;
+	font-weight: 400;
+}
+
+.totalTitle {
+	font-size: 1vw;
+	font-weight: 400;
+}
+.totalInfo {
+	font-size: 16px;
+	font-weight: 400;
+}
 @media (max-width: 1200px) {
 	.content {
 		display: grid;
@@ -81,7 +128,40 @@
 		width: 100%;
 		min-height: auto;
 	}
+	.infoBox {
+		font-size: 2.4vw;
+	}
 	.rightBlock {
 		width: 100%;
+	}
+	.totalLine {
+		gap: 7vw;
+	}
+	.totalMainTitle {
+		font-size: 3vw;
+		font-weight: 400;
+	}
+
+	.totalTitle {
+		font-size: 3vw;
+		font-weight: 400;
+	}
+	.totalInfo {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.totalInfo {
+		font-size: 2;
+	}
+	.purchaseButton {
+		width: 100%;
+		font-size: 4vw;
+	}
+	.smileSvg {
+		height: 15vw;
+	}
+
+	.totalLine {
+		padding-bottom: 5vw;
 	}
 }
