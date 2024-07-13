@@ -18,7 +18,7 @@ export const Product = () => {
 		const item = {
 			_id: items._id,
 			title: items.title,
-			selectedSize: selectedSize,
+			selectedSize: selectedSize ? selectedSize : 'o.s.',
 			price: items.price,
 			imageUrl: items.imageUrl,
 			count: 1,

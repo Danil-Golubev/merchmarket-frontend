@@ -9,26 +9,55 @@ export const Cart = () => {
 	const totalPrice = storedObjects
 		.map((item) => item.price * item.count)
 		.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+	function updateItemInLocalCache(targetId, targetSize) {
+		// Находим индекс нужного объекта
+		const index = storedObjects.findIndex((item) => item._id === targetId && item.selectedSize === targetSize);
+
+		if (storedObjects[index].count > 1) {
+			// Уменьшаем count на 1
+			storedObjects[index].count -= 1;
+		} else {
+			// Если count равен 1, удаляем объект из массива
+			storedObjects.splice(index, 1);
+		}
+
+		// Сохраняем обновленные данные обратно в localStorage
+		localStorage.setItem('storedObjects', JSON.stringify(storedObjects));
+		console.log(targetId, targetSize);
+	}
+
 	return (
 		<>
 			<div className={styles.content}>
 				<div className={styles.leftBlock}>
-					{storedObjects.map((item) => (
-						// eslint-disable-next-line react/jsx-key
-						<div className={styles.oneBlock}>
-							<img className={styles.imageBlock} src={item.imageUrl}></img>
+					{storedObjects.map(
+						(item) => (
+							// eslint-disable-next-line react/jsx-key
+							<div className={styles.oneBlock}>
+								<img className={styles.imageBlock} src={item.imageUrl}></img>
 
-							<div className={styles.title}>{item.title}</div>
-							<div className={styles.size}>{item.selectedSize}</div>
-							<div className={styles.count}>
-								<Button className={styles.customButton}>-</Button>
-								<div className={styles.customButton}>{item.count}</div>
-								<Button className={styles.customButton}>+</Button>
-								<div></div>
+								<div className={styles.title}>
+									{item.title}
+									{`-${item.selectedSize}`}
+								</div>
+
+								<div className={styles.count}>
+									<Button
+										onClick={() => updateItemInLocalCache(item._id, item.selectedSize)}
+										className={styles.customButton}
+									>
+										{'-'}
+									</Button>
+									<div className={styles.customButtonCount}>{item.count}</div>
+									<Button className={styles.customButton}>{'+'}</Button>
+									<div></div>
+								</div>
+								<div className={styles.price}>${item.price * item.count}.00 </div>
 							</div>
-							<div className={styles.price}>${item.price * item.count}.00 </div>
-						</div>
-					))}
+						),
+						[storedObjects],
+					)}
 				</div>
 				<div className={styles.rightBlock}>
 					<div className={styles.rightBlockContent}>
