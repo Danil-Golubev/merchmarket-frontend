@@ -81,7 +81,7 @@
 	display: flex;
 	height: 30px;
 	width: 30px;
-	font-size: 28px;
+	font-size: 1.4vw;
 }
 .customButtonCount {
 	border-collapse: collapse;
@@ -91,13 +91,14 @@
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	font-size: 1.2vw;
 }
 .count {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 40%;
-	font-size: 1.4vw;
+	font-size: 1.6vw;
 	display: flex;
 	align-items: center;
 	gap: 1vw;
@@ -287,13 +288,13 @@
 }
 @media (max-width: 650px) {
 	.count {
-		gap: 2vw;
+		gap: 1vw;
 	}
 	.customButtonCount {
 		font-size: 5vw;
 	}
 	.customButton {
-		font-size: 5vw;
+		font-size: 6vw;
 	}
 	.price {
 		font-size: 4vw;

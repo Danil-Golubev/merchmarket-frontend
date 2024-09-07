@@ -27,10 +27,8 @@ export const Product = () => {
 		const targetItem = cart.find((obj) => obj._id === targetid && obj.selectedSize === targetSize);
 		if (targetItem != undefined) {
 			cart[cart.indexOf(targetItem)].count += 1;
-			console.log('найден');
 		} else {
 			cart.push(item);
-			console.log('не найден');
 		}
 		setCart(cart);
 		localStorage.setItem('cart', JSON.stringify(cart));
