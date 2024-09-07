@@ -2,6 +2,13 @@ import styles from './ItemContainerSkeleton.module.scss';
 
 export const ItemContainerSkeleton = ({ title, price }) => (
 	<>
+		<div className={styles.modal}>
+			{' '}
+			<div className={styles.title}>
+				Пожалуйста подождите, проект не является коммерческим и размещен на бесплатном хостинге.
+				<br /> Первичная загрузка может занять до 10 секунд, потом все будет ок =)
+			</div>
+		</div>
 		<div className={styles.container}>
 			<div className={styles.skeletonText}>
 				<div className={styles.skeletonImage}>

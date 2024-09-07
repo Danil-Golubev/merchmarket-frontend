@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import styles from './Cart.module.scss';
 
@@ -30,7 +31,7 @@ export const Cart = () => {
 
 		// Сохраняем обновленные данные обратно в localStorage
 		localStorage.setItem('cart', JSON.stringify(storedObjects));
-		setStoredOjects(storedObjects);
+
 		setCart(storedObjects);
 
 		window.dispatchEvent(cartChangeEvent);
@@ -42,10 +43,21 @@ export const Cart = () => {
 		storedObjects[index].count += 1;
 		// Сохраняем обновленные данные обратно в localStorage
 		localStorage.setItem('cart', JSON.stringify(storedObjects));
-		setStoredOjects(storedObjects);
-		setCart(storedObjects);
 
+		setCart(storedObjects);
 		window.dispatchEvent(cartChangeEvent);
+	}
+
+	if (!storedObjects.length) {
+		return (
+			<div className={styles.clearblock}>
+				<div className={styles.clearcontent}>
+					<img className={styles.smileSvg} src={'https://www.svgrepo.com/show/85894/straight.svg'}></img>
+					<div className={styles.cleartitle}>It seems your cart is empty</div>
+					<div className={styles.cleartitle}>Add something if you want to spend some money</div>
+				</div>
+			</div>
+		);
 	}
 
 	return (
@@ -87,7 +99,11 @@ export const Cart = () => {
 						<img className={styles.smileSvg} src={'https://www.svgrepo.com/show/71651/smile.svg'}></img>
 						<div className={styles.infoBox}>
 							What to do if you receive a damaged merchandise item and all information about refund policy located on
-							our F.A.Q page page, visit it to get a advanced information about our order political.
+							our{' '}
+							<Link to='/merchmarket-frontend/faqs'>
+								<a className={styles.astyle}>F.A.Q</a>
+							</Link>{' '}
+							page page, visit it to get a advanced information about our order political.
 						</div>
 						<div className={styles.totalLine}>
 							<div className={styles.totalMainTitle}>Your order:</div>

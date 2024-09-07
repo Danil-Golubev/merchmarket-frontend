@@ -9,31 +9,11 @@ export const Contact = () => (
 				<div className={styles.diag}></div>
 			</div>
 			<div className={styles.infoBlock}>
-				<div className={styles.contentBlock}>
-					<ul className={styles.contentUl}>
-						<li className={styles.contentLi}>
-							<div className={styles.LiText}>Contact us</div>
-						</li>
-						<li className={styles.contentLi}>
-							<div className={styles.LiText}>
-								Have you checked our Customer Service pages to see if your inquiry is covered there?
-							</div>
-						</li>
-						<li className={styles.contentLi}>
-							<div className={styles.LiText}>Go to: </div>
-						</li>
-
-						<li className={styles.contentLi}>
-							<input className={styles.input} type='text' title={'enter the email here'}></input>
-						</li>
-						<li className={styles.contentLi}>
-							<input className={styles.input} type='text' title={'enter the email here'}></input>
-						</li>
-						<li className={styles.contentLi}>
-							<input className={styles.input} type='text' title={'enter the email here'}></input>
-						</li>
-					</ul>
+				<div className={styles.textinfo}>Contact</div>
+				<div className={styles.textinfo}>
+					For all questions regarding your order, please contact support@merchworld.se
 				</div>
+				<div className={styles.textinfo}>For all product related questions, please contact info@year0001.com</div>
 			</div>
 		</div>
 	</>

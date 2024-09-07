@@ -35,7 +35,7 @@
 .price {
 	height: 50%;
 	width: 20%;
-	font-size: 0.8vw;
+	font-size: 1vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -56,6 +56,9 @@
 .leftBlock {
 	border-collapse: collapse;
 	width: 75%;
+	min-height: 76.4vh;
+	border: 0.25px solid black;
+	border-top: none;
 }
 .rightBlock {
 	border: 0.25px solid black;
@@ -69,25 +72,24 @@
 }
 
 .customButton {
+	border: none;
 	background-color: white;
 	cursor: pointer;
 	height: 100%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	border: 1px solid black;
 	height: 30px;
 	width: 30px;
 	font-size: 28px;
-	border-collapse: collapse;
 }
 .customButtonCount {
 	border-collapse: collapse;
-	border: 1px solid black;
 	width: 30px;
 	height: 28px;
 	font-size: 20px;
 	justify-content: center;
+	align-items: center;
 	display: flex;
 }
 .count {
@@ -95,7 +97,10 @@
 	align-items: center;
 	justify-content: center;
 	width: 40%;
-	font-size: 0.8vw;
+	font-size: 1.4vw;
+	display: flex;
+	align-items: center;
+	gap: 1vw;
 }
 .purchaseButton {
 	font-size: 1vw;
@@ -106,7 +111,7 @@
 }
 
 .smileSvg {
-	padding-top: 2vw;
+	padding-top: 3vw;
 	display: flex;
 	height: 5vw;
 	width: 100%;
@@ -116,7 +121,7 @@
 .infoBox {
 	margin-top: 15px;
 	padding-bottom: 20px;
-	font-size: 0.5vw;
+	font-size: 0.8vw;
 	font-style: italic;
 }
 .rightBlockContent {
@@ -141,20 +146,65 @@
 	font-size: 16px;
 	font-weight: 400;
 }
+
+.clearblock {
+	width: 100%;
+	height: 75vh;
+	border: 0.25px solid black;
+	display: flex;
+	border-collapse: collapse;
+}
+.cleartitle {
+	font-size: 2vw;
+	text-align: center;
+}
+
+.clearcontent {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.astyle {
+	text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+	.title {
+		font-size: 1.4vw;
+	}
+	.price {
+		font-size: 1.4vw;
+	}
+	.customButtonCount {
+		font-size: 1.4vw;
+	}
+	.customButton {
+		font-size: 2vw;
+	}
+}
+
 @media (max-width: 1200px) {
+	.count {
+		gap: 30px;
+	}
+
+	.cleartitle {
+		font-size: 5vw;
+	}
 	.rightBlockContent {
 		height: 400px;
 	}
 
 	.title {
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 	.price {
 		font-size: 3vw;
 	}
-	.count {
-		font-size: 3vw;
-	}
+
 	.content {
 		display: grid;
 	}
@@ -193,12 +243,59 @@
 		font-size: 4vw;
 	}
 	.smileSvg {
-		padding-top: 10vw;
-		padding-bottom: 15vw;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
 		height: 15vw;
 	}
 
 	.totalLine {
 		padding-bottom: 5vw;
+	}
+
+	.customButtonCount {
+		font-size: 3vw;
+	}
+	.customButton {
+		font-size: 3vw;
+	}
+	.totalInfo {
+		font-size: 3vw;
+	}
+	.customButtonCount {
+		font-size: 3vw;
+	}
+
+	.customButton {
+		font-size: 4vw;
+	}
+}
+
+@media (max-width: 800px) {
+	.title {
+		font-size: 3vw;
+	}
+	.count {
+		gap: 3vw;
+	}
+
+	.customButtonCount {
+		font-size: 4vw;
+	}
+	.customButton {
+		font-size: 4vw;
+	}
+}
+@media (max-width: 650px) {
+	.count {
+		gap: 2vw;
+	}
+	.customButtonCount {
+		font-size: 5vw;
+	}
+	.customButton {
+		font-size: 5vw;
+	}
+	.price {
+		font-size: 4vw;
 	}
 }

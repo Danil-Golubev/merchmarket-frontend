@@ -8,6 +8,15 @@
 	border: 0.25px solid #000000cc;
 	overflow: hidden;
 }
+.title {
+	font-size: 2vw;
+	color: grey;
+	padding: 20px;
+}
+
+.modal {
+	position: absolute;
+}
 
 @keyframes skeleton-loading {
 	0% {

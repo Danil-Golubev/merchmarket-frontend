@@ -10,9 +10,10 @@
 
 .Header {
 	width: 100%;
-	height: 11vw;
+	height: 5.5vw;
 	display: flex;
 	flex-wrap: wrap;
+	border-bottom: 0.5px solid black;
 }
 
 .container {
@@ -45,7 +46,7 @@
 }
 .block2 {
 	width: 50%;
-	height: auto;
+	height: 100%;
 	object-fit: contain;
 	box-sizing: border-box;
 	position: relative;
@@ -60,51 +61,10 @@
 	height: 80%;
 	font-size: 1.7vw;
 }
-
-.halfblockcontentup {
-	cursor: pointer;
-	align-items: center;
-
-	display: flex;
-	width: 100%;
-	height: 100%;
-	font-size: 1.2vw;
-}
 .halfblockcontentBag {
 	height: 100%;
 	font-size: 1.6vw;
 	width: 80%;
-}
-.marqueewrapper {
-	align-items: center;
-	height: 100%;
-	display: flex;
-	width: 100%;
-	justify-content: flex-start;
-	overflow: hidden;
-}
-
-.marqueewrapper:hover .marqueeitem {
-	animation-play-state: paused;
-}
-
-.marqueeitem {
-	font-style: italic;
-
-	white-space: nowrap;
-	display: flex;
-	padding-right: 2rem; /* Отступ между элементами */
-	animation: move-rtl 6000ms linear infinite;
-	animation-play-state: running; /* По умолчанию анимация запущена */
-}
-
-@keyframes move-rtl {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
 }
 
 .bag {
@@ -149,7 +109,7 @@
 	object-fit: contain;
 
 	position: relative;
-	border: 0.25px solid #000000cc;
+	border-left: 0.25px solid #000000cc;
 }
 
 .halfblocklist {
@@ -162,7 +122,7 @@
 	justify-content: center;
 	display: flex;
 	width: 100%;
-	height: 50%;
+	height: 100%;
 	object-fit: contain;
 	box-sizing: border-box;
 	position: relative;
@@ -178,12 +138,11 @@
 	justify-content: center;
 	display: flex;
 	width: 100%;
-	height: 50%;
+	height: 100%;
 	object-fit: contain;
 	box-sizing: border-box;
 	position: relative;
 	border: 0.25px solid #000000cc;
-	border-top: 0.5px solid black;
 }
 
 .diag {
@@ -206,9 +165,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 3vw;
+	font-size: 1.2vw;
 }
 
+.pagetitle {
+}
 .amount {
 	right: 0;
 }
@@ -224,101 +185,19 @@
 	gap: 10vw;
 }
 
-.modalscreen {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.custombutton {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	height: 50px;
-	width: 70%;
-	border: 1px solid black;
-}
-
-.modalblock {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 450px;
-	width: 600px;
-	background-color: white;
-
-	border: 0.5px solid black;
-}
-.smileSvg {
-	height: 50px;
-}
-.modaltitle {
-	text-align: center;
-}
-.modaldesc {
-	font-size: 12px;
-}
-.custominput {
-	width: 70%;
-	height: 40px;
-}
-.checkboxes {
-	gap: 10px;
-	width: 70%;
-	display: flex;
-	align-items: start;
-	flex-direction: column;
-}
-.checkboxblock {
-	min-height: 25px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.modalblockcontent {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-	padding: 20px;
-	width: 90%;
-	height: 90%;
-}
-
 @media (max-width: 1200px) {
-	.modalblock {
-		width: 55vw;
-		min-height: 50vw;
-	}
-	.modaldesc {
-		font-size: 1.6vw;
-	}
-	.modalblockcontent {
-		border: none;
+	.block {
+		display: none;
 	}
 
 	.halfblockdiag {
 		display: none;
 	}
-	.block {
-		height: 50%;
-		border-left: 0.25px solid black;
+	.title {
+		font-size: 2vw;
 	}
-	.halfblock2 {
-		height: 100%;
-	}
-	.marqueewrapper {
-		font-size: 3vw;
-		width: 66%;
-	}
-
-	.marqueewrapper {
-		justify-content: center;
-		align-items: center;
-		display: flex;
+	.pagetitle {
+		font-size: 2.8vw;
 	}
 	.halfblocklist {
 		width: 150%;
@@ -334,16 +213,12 @@
 		width: 95%;
 	}
 
-	.halfblockcontentBag {
-		font-size: 1.4vw;
-	}
-
 	.pageslist {
 		padding-left: 10vw;
 		gap: 10vw;
 	}
 	.Header {
-		height: 16vw;
+		height: 8vw;
 	}
 	.pageslist {
 		font-size: 2.5vw;
@@ -366,7 +241,7 @@
 		font-size: 0.8vw;
 	}
 	.Header {
-		height: 8vw;
+		height: 4vw;
 	}
 }
 @media (max-width: 1540px) {
@@ -393,7 +268,7 @@
 		gap: 8vw; // was 8
 	}
 	.Header {
-		height: 20vw;
+		height: 10vw;
 	}
 	.pageslist {
 		font-size: 3.5vw;
@@ -406,36 +281,9 @@
 	}
 }
 
-@media (max-width: 950px) {
-	.modalblock {
-		height: auto;
-	}
-	.modalblockcontent {
-		height: 90%;
-	}
-}
-
-@media (max-width: 800px) {
-	.modalblock {
-		width: 100%;
-	}
-	.checkboxes {
-		height: auto;
-	}
-	.modaldesc {
-		font-size: 2.6vw;
-	}
-}
-
-@media (max-width: 500px) {
-	.modaldesc {
-		font-size: 3vw;
-	}
-}
-
 @media (max-width: 450px) {
 	.Header {
-		height: 20vw;
+		height: 10vw;
 	}
 	.pageslist {
 		padding-left: 7vw; // was 8
@@ -470,5 +318,8 @@
 }
 
 .block:hover {
+}
+
+.halfblockcontentBag:hover {
 	text-decoration: line-through;
 }
