@@ -5,9 +5,13 @@ RU
 Фротенд часть написана с использованием React JS + SCSS Modules, верстка полностью адаптивная под любые экраны.
 Бэкенд часть написана на Node JS, данные хранятся в базе данных MongoDb
 
+Ссылка на актуальный проект - https://danil-golubev.github.io/merchmarket-frontend/
+
 ENG
 
 ### Merchandise store project made on the basis of an existing [platform](https://row.yungleangear.com/).
 
 The frontend part is written using React JS + SCSS Modules, the layout is fully adaptive to any screen.
 The backend part is written in Node JS, the data is stored in the MongoDb database
+
+Link to the actual project - https://danil-golubev.github.io/merchmarket-frontend/
