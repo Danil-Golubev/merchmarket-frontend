@@ -1,4 +1,4 @@
-Link - https://danil-golubev.github.io/merchmarket-frontend/
+[Link](https://danil-golubev.github.io/merchstore.frontend/)
 
 RU
 
